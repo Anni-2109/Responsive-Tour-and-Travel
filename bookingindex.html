@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelp - Online Booking</title>
+  <link rel="stylesheet" href="assets/css/stylebookingindex.css" />
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop class="bgVideo">
+    <source src="assets/images/sunset-ocean.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Booking Section -->
+  <main class="booking-section">
+    <div class="info">
+      <h1>Online Booking</h1>
+      <p>
+        Life is short, so your travel bucket list doesn’t have to be. We make travel planning easy, giving you an opportunity to create memories that last a lifetime. We offer a wide range of travel packages with exceptional discounts. Book and enjoy the trip of a lifetime.
+      </p>
+    </div>
+
+    <div class="form-container">
+      <h2>Book a Tour</h2>
+      <form id="bookingForm">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone" required />
+        <select required>
+          <option value="">Choose your Destination</option>
+          <option value="paris">Puri</option>
+          <option value="bali">Agra</option>
+          <option value="newyork">Amritsar</option>
+        </select>
+        <input type="date" required />
+        <button type="submit">Book Now</button>
+      </form>
+      <div id="confirmation" class="hidden"></div>
+    </div>
+  </main>
+
+  <script src="assets/js/bookingmain.js"></script>
+</body>
+</html>
